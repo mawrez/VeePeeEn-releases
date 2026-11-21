@@ -1,42 +1,42 @@
 {
-  "version": "1.3.0",
-  "tag": "v1.3.0",
-  "published": "2026-11-21T12:45:27Z",
-  "notes": "**New: a separate OpenVPN section (Windows)**\n\n- Own server list, tester and connect button, separate from V2Ray/Xray. Full view: \"OpenVPN\" in the sidebar. Compact view: the switch at the top. Only one connection runs at a time; switching stops the other one.\n- Free servers from VPN Gate (with a GitHub/jsDelivr mirror when vpngate.net is blocked) and VPNBook (its rotating password is fetched for you). You can also import your own .ovpn files.\n- Light on data: each server gets one tiny handshake (about 120 bytes). No automatic speed tests. Server lists are only downloaded again after 30 minutes.\n- Comes with the official OpenVPN 2.6.23. The first connect installs the signed TAP network driver (needs admin). You can turn on the faster ovpn-dco driver in Settings for servers that support it.\n- Shows your exit IP after connecting. \"Check clean\" runs the cleanliness check when you ask. The Tunnel DNS setting applies to OpenVPN too.\n- Sources can be switched on or off in Settings, and each one shows how many of its servers worked.\n\nAndroid: no changes (it doesn't have the OpenVPN section).\n",
+  "version": "1.3.1",
+  "tag": "v1.3.1",
+  "published": "2026-11-21T14:45:08Z",
+  "notes": "- Fixes in-app updates (the update key built into 1.2.0 and 1.3.0 was wrong). Install this one manually once; later versions will show the Update button.\n",
   "windows": {
-    "name": "VeePeeEn-1.3.0-setup.exe",
-    "path": "v1.3.0/VeePeeEn-1.3.0-setup.exe",
-    "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.0/VeePeeEn-1.3.0-setup.exe",
-    "sha256": "e71cb7b1c951cf2cc7ad6330a53c333f15f7d42c53008694bc680efce2b8ecb9",
-    "size": 30964407
+    "name": "VeePeeEn-1.3.1-setup.exe",
+    "path": "v1.3.1/VeePeeEn-1.3.1-setup.exe",
+    "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.1/VeePeeEn-1.3.1-setup.exe",
+    "sha256": "879ba2b1fe8bdda6c09ea7c42f20a313b4a10533f39c0c3e9400b38a91f24a6b",
+    "size": 30956335
   },
   "windows_zip": {
     "name": "VeePeeEn-win64.zip",
-    "path": "v1.3.0/VeePeeEn-win64.zip",
-    "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.0/VeePeeEn-win64.zip",
-    "sha256": "f70e0475b1fb6df86e5ea5546847f2e9d01d2a0c461f1e5dc59dfc6995551ba0",
-    "size": 41282960
+    "path": "v1.3.1/VeePeeEn-win64.zip",
+    "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.1/VeePeeEn-win64.zip",
+    "sha256": "4c5dcfa6cd31de6280de7333a776199b4b99cf3ac38d0625c2b8f822fceb5335",
+    "size": 41282993
   },
   "android": {
     "arm64-v8a": {
       "name": "VeePeeEn-android-arm64-v8a.apk",
-      "path": "v1.3.0/VeePeeEn-android-arm64-v8a.apk",
-      "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.0/VeePeeEn-android-arm64-v8a.apk",
-      "sha256": "468a72024d91987b868e45558a5db37cd34770d5a35ad627c5ad2901b6f48e92",
+      "path": "v1.3.1/VeePeeEn-android-arm64-v8a.apk",
+      "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.1/VeePeeEn-android-arm64-v8a.apk",
+      "sha256": "d42a73b21054ffc1fffc0196f4b4efef2620d7bb2d433508ff0a4c04bf4d4735",
       "size": 16197621
     },
     "armeabi-v7a": {
       "name": "VeePeeEn-android-armeabi-v7a.apk",
-      "path": "v1.3.0/VeePeeEn-android-armeabi-v7a.apk",
-      "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.0/VeePeeEn-android-armeabi-v7a.apk",
-      "sha256": "d6ae0caa460da2a9c97cebfa850ebe8c7dbd4b79093d615234d8a9d365ab9fe5",
-      "size": 16537377
+      "path": "v1.3.1/VeePeeEn-android-armeabi-v7a.apk",
+      "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.1/VeePeeEn-android-armeabi-v7a.apk",
+      "sha256": "d99e909d7a2c699124cffb64c73383dc160ba5424ea3ba8f298ede9a178dc1b4",
+      "size": 16537381
     },
     "universal": {
       "name": "VeePeeEn-android-universal.apk",
-      "path": "v1.3.0/VeePeeEn-android-universal.apk",
-      "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.0/VeePeeEn-android-universal.apk",
-      "sha256": "816a04cf71721df66162a4b5a95e02641369d20a1a64d11f529958abe8824e1f",
+      "path": "v1.3.1/VeePeeEn-android-universal.apk",
+      "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.1/VeePeeEn-android-universal.apk",
+      "sha256": "74e2c73753365f75e28eb244fc352fe1dbed3cae0471db0c42e0fc49d2e3f443",
       "size": 31546307
     }
   }

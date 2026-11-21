@@ -3,17 +3,17 @@
 Release channel for **VeePeeEn** (Windows + Android). The source lives in a separate private repo;
 this repo only carries the built files and the update manifest the app reads.
 
-## Latest: 1.3.0 (2026-11-21)
+## Latest: 1.3.1 (2026-11-21)
 
 | File | Size | SHA-256 |
 |---|---|---|
-| [`VeePeeEn-1.3.0-setup.exe`](https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.0/VeePeeEn-1.3.0-setup.exe) | 29.5 MB | `e71cb7b1c951cf2cc7ad6330a53c333f15f7d42c53008694bc680efce2b8ecb9` |
-| [`VeePeeEn-android-arm64-v8a.apk`](https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.0/VeePeeEn-android-arm64-v8a.apk) | 15.4 MB | `468a72024d91987b868e45558a5db37cd34770d5a35ad627c5ad2901b6f48e92` |
-| [`VeePeeEn-android-armeabi-v7a.apk`](https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.0/VeePeeEn-android-armeabi-v7a.apk) | 15.8 MB | `d6ae0caa460da2a9c97cebfa850ebe8c7dbd4b79093d615234d8a9d365ab9fe5` |
-| [`VeePeeEn-android-universal.apk`](https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.0/VeePeeEn-android-universal.apk) | 30.1 MB | `816a04cf71721df66162a4b5a95e02641369d20a1a64d11f529958abe8824e1f` |
-| [`VeePeeEn-win64.zip`](https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.0/VeePeeEn-win64.zip) | 39.4 MB | `f70e0475b1fb6df86e5ea5546847f2e9d01d2a0c461f1e5dc59dfc6995551ba0` |
+| [`VeePeeEn-1.3.1-setup.exe`](https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.1/VeePeeEn-1.3.1-setup.exe) | 29.5 MB | `879ba2b1fe8bdda6c09ea7c42f20a313b4a10533f39c0c3e9400b38a91f24a6b` |
+| [`VeePeeEn-android-arm64-v8a.apk`](https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.1/VeePeeEn-android-arm64-v8a.apk) | 15.4 MB | `d42a73b21054ffc1fffc0196f4b4efef2620d7bb2d433508ff0a4c04bf4d4735` |
+| [`VeePeeEn-android-armeabi-v7a.apk`](https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.1/VeePeeEn-android-armeabi-v7a.apk) | 15.8 MB | `d99e909d7a2c699124cffb64c73383dc160ba5424ea3ba8f298ede9a178dc1b4` |
+| [`VeePeeEn-android-universal.apk`](https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.1/VeePeeEn-android-universal.apk) | 30.1 MB | `74e2c73753365f75e28eb244fc352fe1dbed3cae0471db0c42e0fc49d2e3f443` |
+| [`VeePeeEn-win64.zip`](https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.1/VeePeeEn-win64.zip) | 39.4 MB | `4c5dcfa6cd31de6280de7333a776199b4b99cf3ac38d0625c2b8f822fceb5335` |
 
-Install on Windows: run `VeePeeEn-1.3.0-setup.exe` (per-user install, no admin needed to
+Install on Windows: run `VeePeeEn-1.3.1-setup.exe` (per-user install, no admin needed to
 install; VeePeeEn asks for admin when it starts because TUN mode needs it). Installed apps update
 themselves from inside the app (Update button in the header).
 
