@@ -1,0 +1,43 @@
+{
+  "version": "1.2.0",
+  "tag": "v1.2.0",
+  "published": "2026-11-21T11:40:05Z",
+  "notes": "## What's new\n- Windows installer (VeePeeEn-1.2.0-setup.exe): installs per-user, adds Start Menu and desktop shortcuts, includes an uninstaller. Upgrades in place.\n- In-app updates: VeePeeEn checks for new versions (never downloads on its own). When one is out, an Update button appears; one click downloads it, verifies it and installs it.\n- Settings → Updates: turn checks on or off, or check now.\n",
+  "windows": {
+    "name": "VeePeeEn-1.2.0-setup.exe",
+    "path": "v1.2.0/VeePeeEn-1.2.0-setup.exe",
+    "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.2.0/VeePeeEn-1.2.0-setup.exe",
+    "sha256": "229b8a06dc5c16814b1ab8fc54681aecce90c38c6e9f5ee1ed8da860bc88a84d",
+    "size": 28433090
+  },
+  "windows_zip": {
+    "name": "VeePeeEn-win64.zip",
+    "path": "v1.2.0/VeePeeEn-win64.zip",
+    "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.2.0/VeePeeEn-win64.zip",
+    "sha256": "9c5da652d116efcf8fa34a1bfefc99660aa09e479e3968ca740fe8285e6483ee",
+    "size": 37787164
+  },
+  "android": {
+    "arm64-v8a": {
+      "name": "VeePeeEn-android-arm64-v8a.apk",
+      "path": "v1.2.0/VeePeeEn-android-arm64-v8a.apk",
+      "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.2.0/VeePeeEn-android-arm64-v8a.apk",
+      "sha256": "8b049746bfe8fb714c3cdf34621911defbde942674633e227ca796e37a98253a",
+      "size": 16196241
+    },
+    "armeabi-v7a": {
+      "name": "VeePeeEn-android-armeabi-v7a.apk",
+      "path": "v1.2.0/VeePeeEn-android-armeabi-v7a.apk",
+      "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.2.0/VeePeeEn-android-armeabi-v7a.apk",
+      "sha256": "0b21d82c8f94abf1dc7f2716191d25b4a3778bcdedd7e7d38051620603f37597",
+      "size": 16536857
+    },
+    "universal": {
+      "name": "VeePeeEn-android-universal.apk",
+      "path": "v1.2.0/VeePeeEn-android-universal.apk",
+      "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.2.0/VeePeeEn-android-universal.apk",
+      "sha256": "5d7c33a2dc0d27fedf5b2293c450e00a118b9c03b0e4dcceb092fd99a6f2245d",
+      "size": 31544403
+    }
+  }
+}

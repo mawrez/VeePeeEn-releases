@@ -1,0 +1,61 @@
+name: release
+
+# Creates/updates GitHub release v<version> from the files committed under v<version>/ whenever
+# latest.json changes on main. Uses this repo's own GITHUB_TOKEN (works in a private repo too).
+# The VeePeeEn app reads latest.json through the API and downloads the setup.exe from this release
+# (falling back to the committed copy under v<version>/).
+
+on:
+  push:
+    branches: [main]
+    paths: [latest.json]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate latest.json and files
+        id: meta
+        run: |
+          set -euo pipefail
+          v=$(jq -er .version latest.json)
+          dir="v$v"
+          [ -d "$dir" ] || { echo "::error::$dir/ is missing"; exit 1; }
+          name=$(jq -er .windows.name latest.json)
+          want=$(jq -er .windows.sha256 latest.json)
+          size=$(jq -er .windows.size latest.json)
+          [ -f "$dir/$name" ] || { echo "::error::$dir/$name is missing"; exit 1; }
+          got=$(sha256sum "$dir/$name" | cut -d' ' -f1)
+          [ "$want" = "$got" ] || { echo "::error::sha256 mismatch for $name: latest.json $want, file $got"; exit 1; }
+          [ "$size" = "$(stat -c %s "$dir/$name")" ] || { echo "::error::size mismatch for $name"; exit 1; }
+          (cd "$dir" && sha256sum * | grep -v SHA256SUMS.txt > SHA256SUMS.txt || true)
+          jq -r '.notes // ""' latest.json > notes.md
+          echo "version=$v" >> "$GITHUB_OUTPUT"
+          echo "dir=$dir" >> "$GITHUB_OUTPUT"
+          ls -la "$dir"
+
+      - name: Create or update release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          V: ${{ steps.meta.outputs.version }}
+          DIR: ${{ steps.meta.outputs.dir }}
+        run: |
+          set -euo pipefail
+          tag="v$V"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release upload "$tag" "$DIR"/* --clobber
+            gh release edit "$tag" --title "VeePeeEn $V" --notes-file notes.md --latest
+          else
+            gh release create "$tag" "$DIR"/* --title "VeePeeEn $V" --notes-file notes.md --target "$GITHUB_SHA" --latest
+          fi
+          gh release view "$tag" --json url,assets --jq '.url, (.assets[] | "\(.name)  \(.size)")'
