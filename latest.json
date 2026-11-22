@@ -1,43 +1,43 @@
 {
-  "version": "1.3.1",
-  "tag": "v1.3.1",
-  "published": "2026-11-21T14:45:08Z",
-  "notes": "- Fixes in-app updates (the update key built into 1.2.0 and 1.3.0 was wrong). Install this one manually once; later versions will show the Update button.\n",
+  "version": "1.3.2",
+  "tag": "v1.3.2",
+  "published": "2026-11-22T16:06:43Z",
+  "notes": "- Android: fixed the crash during the real delay test on 32-bit phones (armeabi-v7a).\n- Android: if the app ever crashes, the report now shows in Logs on the next launch.\n- Android: lighter test settings on 32-bit phones.\n- Android: redesigned UI (power button, status chip, stage stepper, floating navigation, new server cards).\n- Windows: no functional changes.\n",
   "windows": {
-    "name": "VeePeeEn-1.3.1-setup.exe",
-    "path": "v1.3.1/VeePeeEn-1.3.1-setup.exe",
-    "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.1/VeePeeEn-1.3.1-setup.exe",
-    "sha256": "879ba2b1fe8bdda6c09ea7c42f20a313b4a10533f39c0c3e9400b38a91f24a6b",
-    "size": 30956335
+    "name": "VeePeeEn-1.3.2-setup.exe",
+    "path": "v1.3.2/VeePeeEn-1.3.2-setup.exe",
+    "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.2/VeePeeEn-1.3.2-setup.exe",
+    "sha256": "5d0671526a9732e9f7ccc5e334080a536c60f2d0a979c4e6e0d0fc21855de14c",
+    "size": 30963516
   },
   "windows_zip": {
     "name": "VeePeeEn-win64.zip",
-    "path": "v1.3.1/VeePeeEn-win64.zip",
-    "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.1/VeePeeEn-win64.zip",
-    "sha256": "4c5dcfa6cd31de6280de7333a776199b4b99cf3ac38d0625c2b8f822fceb5335",
-    "size": 41282993
+    "path": "v1.3.2/VeePeeEn-win64.zip",
+    "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.2/VeePeeEn-win64.zip",
+    "sha256": "03b07a128867ce25125515178b24e7fc1433a3756df961a0f815f772325855c0",
+    "size": 41282625
   },
   "android": {
     "arm64-v8a": {
       "name": "VeePeeEn-android-arm64-v8a.apk",
-      "path": "v1.3.1/VeePeeEn-android-arm64-v8a.apk",
-      "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.1/VeePeeEn-android-arm64-v8a.apk",
-      "sha256": "d42a73b21054ffc1fffc0196f4b4efef2620d7bb2d433508ff0a4c04bf4d4735",
-      "size": 16197621
+      "path": "v1.3.2/VeePeeEn-android-arm64-v8a.apk",
+      "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.2/VeePeeEn-android-arm64-v8a.apk",
+      "sha256": "3ddfe6671356c35cbb68996ab5142d9ae42b58b4482013715d4cf1865823761b",
+      "size": 16248177
     },
     "armeabi-v7a": {
       "name": "VeePeeEn-android-armeabi-v7a.apk",
-      "path": "v1.3.1/VeePeeEn-android-armeabi-v7a.apk",
-      "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.1/VeePeeEn-android-armeabi-v7a.apk",
-      "sha256": "d99e909d7a2c699124cffb64c73383dc160ba5424ea3ba8f298ede9a178dc1b4",
-      "size": 16537381
+      "path": "v1.3.2/VeePeeEn-android-armeabi-v7a.apk",
+      "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.2/VeePeeEn-android-armeabi-v7a.apk",
+      "sha256": "56fc80c2531ecb4ebe4a10cf727d0b92228d87fa777eae55a8079423c7564f69",
+      "size": 16589141
     },
     "universal": {
       "name": "VeePeeEn-android-universal.apk",
-      "path": "v1.3.1/VeePeeEn-android-universal.apk",
-      "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.1/VeePeeEn-android-universal.apk",
-      "sha256": "74e2c73753365f75e28eb244fc352fe1dbed3cae0471db0c42e0fc49d2e3f443",
-      "size": 31546307
+      "path": "v1.3.2/VeePeeEn-android-universal.apk",
+      "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.2/VeePeeEn-android-universal.apk",
+      "sha256": "98430533ad6c93cd3782db538caa0359a96b39e13a03eb7e40e925d2a115c8c8",
+      "size": 31598207
     }
   }
 }
