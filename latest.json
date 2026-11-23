@@ -1,43 +1,43 @@
 {
-  "version": "1.3.2",
-  "tag": "v1.3.2",
-  "published": "2026-11-22T16:06:43Z",
-  "notes": "- Android: fixed the crash during the real delay test on 32-bit phones (armeabi-v7a).\n- Android: if the app ever crashes, the report now shows in Logs on the next launch.\n- Android: lighter test settings on 32-bit phones.\n- Android: redesigned UI (power button, status chip, stage stepper, floating navigation, new server cards).\n- Windows: no functional changes.\n",
+  "version": "1.4.0",
+  "tag": "v1.4.0",
+  "published": "2026-11-23T14:41:00Z",
+  "notes": "New, each with its own switch (all off by default):\n\n- WARP chain: your traffic goes server -> Cloudflare WARP, so sites see a Cloudflare IP. Free WARP account registered on first use. If a server can't carry it, VeePeeEn falls back to the plain server and tells you (fallback on by default).\n- Clean Cloudflare IP scanner: runs only when you press Scan, shows the data estimate first, then rewrites CDN configs to the fastest clean IPs.\n- Auto-failover: keeps your best tested servers as backups and switches without dropping the VPN. Checks only when the line is idle.\n- Iran direct: Iranian sites and IPs bypass the VPN (rules from Chocolate4U/Iran-sing-box-rules, built in).\n\nFixes:\n- Android: sing-box was pausing all UDP through proxy servers (affected WARP, QUIC, voice/video calls).\n- WARP handshake through proxies (reserved bytes).\n\nDocs: docs/ folder explains how everything works.\n",
   "windows": {
-    "name": "VeePeeEn-1.3.2-setup.exe",
-    "path": "v1.3.2/VeePeeEn-1.3.2-setup.exe",
-    "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.2/VeePeeEn-1.3.2-setup.exe",
-    "sha256": "5d0671526a9732e9f7ccc5e334080a536c60f2d0a979c4e6e0d0fc21855de14c",
-    "size": 30963516
+    "name": "VeePeeEn-1.4.0-setup.exe",
+    "path": "v1.4.0/VeePeeEn-1.4.0-setup.exe",
+    "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.4.0/VeePeeEn-1.4.0-setup.exe",
+    "sha256": "01e659e97b7e279cc72ed370ce2049ea7d09cb02525af3ab98e36862f8308893",
+    "size": 31333856
   },
   "windows_zip": {
     "name": "VeePeeEn-win64.zip",
-    "path": "v1.3.2/VeePeeEn-win64.zip",
-    "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.2/VeePeeEn-win64.zip",
-    "sha256": "03b07a128867ce25125515178b24e7fc1433a3756df961a0f815f772325855c0",
-    "size": 41282625
+    "path": "v1.4.0/VeePeeEn-win64.zip",
+    "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.4.0/VeePeeEn-win64.zip",
+    "sha256": "7d76687987cadcd7170de4ec90a9d1f7240f3d48196226bd048a8afc475e1c50",
+    "size": 41668733
   },
   "android": {
     "arm64-v8a": {
       "name": "VeePeeEn-android-arm64-v8a.apk",
-      "path": "v1.3.2/VeePeeEn-android-arm64-v8a.apk",
-      "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.2/VeePeeEn-android-arm64-v8a.apk",
-      "sha256": "3ddfe6671356c35cbb68996ab5142d9ae42b58b4482013715d4cf1865823761b",
-      "size": 16248177
+      "path": "v1.4.0/VeePeeEn-android-arm64-v8a.apk",
+      "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.4.0/VeePeeEn-android-arm64-v8a.apk",
+      "sha256": "3da82795a167fd3788a9a90c29b331de8caa5ff73fccafcd6109e63ec72dd182",
+      "size": 16895117
     },
     "armeabi-v7a": {
       "name": "VeePeeEn-android-armeabi-v7a.apk",
-      "path": "v1.3.2/VeePeeEn-android-armeabi-v7a.apk",
-      "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.2/VeePeeEn-android-armeabi-v7a.apk",
-      "sha256": "56fc80c2531ecb4ebe4a10cf727d0b92228d87fa777eae55a8079423c7564f69",
-      "size": 16589141
+      "path": "v1.4.0/VeePeeEn-android-armeabi-v7a.apk",
+      "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.4.0/VeePeeEn-android-armeabi-v7a.apk",
+      "sha256": "0c7c7e60eecb5ed76fc5eacd4a333bbd0077046b1e3d11f0839f55264caad501",
+      "size": 17233173
     },
     "universal": {
       "name": "VeePeeEn-android-universal.apk",
-      "path": "v1.3.2/VeePeeEn-android-universal.apk",
-      "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.3.2/VeePeeEn-android-universal.apk",
-      "sha256": "98430533ad6c93cd3782db538caa0359a96b39e13a03eb7e40e925d2a115c8c8",
-      "size": 31598207
+      "path": "v1.4.0/VeePeeEn-android-universal.apk",
+      "url": "https://github.com/mawrez/VeePeeEn-releases/releases/download/v1.4.0/VeePeeEn-android-universal.apk",
+      "sha256": "70adae9aa138e89307758c9a25df96a7a106791eee5e6d0268c6e0f8f3ab4c2f",
+      "size": 32868163
     }
   }
 }
